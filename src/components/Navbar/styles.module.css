@@ -1,0 +1,36 @@
+.navbar_container {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 4rem;
+  background-image: linear-gradient(
+    to right top,
+    #4c4c4c,
+    #4a4a4b,
+    #474849,
+    #454648,
+    #424447,
+    #3c3e42,
+    #37393c,
+    #313337,
+    #28292c,
+    #1f1f21,
+    #161617,
+    #090909
+  );
+}
+
+.nav_items {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 1.5rem;
+  flex: 3;
+  list-style: none;
+}
+
+.nav_item {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
