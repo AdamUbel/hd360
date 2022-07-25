@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.title {
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  margin-top: 1rem;
+  font-size: 4.5rem;
+}
+
+.reasons {
+  text-align: center;
+}
+
+.reason {
+  margin-top: 4rem;
+}
