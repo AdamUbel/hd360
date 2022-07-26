@@ -35,20 +35,20 @@
 }
 
 .left_col {
-  background-image: linear-gradient(
-    to right top,
-    #4c4c4c,
-    #4f4f51,
-    #515255,
-    #53555a,
-    #55585f,
-    #63666d,
-    #71747b,
-    #7f828a,
-    #9ea0a6,
-    #bebec3,
-    #dedee0,
-    #ffffff
+  background-image: radial-gradient(
+    circle,
+    #00ccff,
+    #07bbf0,
+    #10a9e0,
+    #1699d0,
+    #1b88bf,
+    #3674a9,
+    #406292,
+    #43507a,
+    #423957,
+    #342636,
+    #20161c,
+    #000000
   );
 
   flex: 1;
@@ -80,7 +80,7 @@
 }
 
 .info {
-  background: rgba(75, 69, 58, 0.747);
+  background: rgba(5, 22, 29, 0.747);
   color: white;
   height: 9rem;
   border: 1px solid black;
@@ -92,5 +92,5 @@
 }
 
 .info h1 {
-  color: wheat;
+  color: rgb(0, 195, 255);
 }
