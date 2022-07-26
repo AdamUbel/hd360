@@ -17,6 +17,7 @@ const Why = () => {
         <h2 className={styles.reason}>88% of marketers are satisfied with the ROI that video delivers.</h2>
         <h2 className={styles.reason}>Video content is preferred marketing tool by 86% of marketing professionals.</h2>
       </div>
+      <a className={styles.service_btn}>SERVICES WE OFFER</a>
     </section>
   );
 };
