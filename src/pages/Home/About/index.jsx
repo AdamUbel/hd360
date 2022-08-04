@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
 
-import { client } from "../../../client";
+import { client } from "../../../lib/client.js";
 
 import styles from "./styles.module.css";
 

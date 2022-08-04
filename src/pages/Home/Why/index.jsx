@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Statement from "../../../components/Statement/index.jsx";
 
 // sanity import
-import { client } from "../../../client.js";
+import { client } from "../../../lib/client.js";
 
 import styles from "./styles.module.css";
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import ClientCard from "../../../components/ClientCard";
 
-import { client } from "../../../client.js";
+import { client } from "../../../lib/client.js";
 
 const Testimonies = () => {
   const [review, setReviews] = useState([]);
