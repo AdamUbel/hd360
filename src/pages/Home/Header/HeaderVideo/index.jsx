@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-import VideoBG from "../../assets/videos/file.mp4";
+import VideoBG from "../../../../assets/videos/file.mp4";
 
 const HeaderVideo = () => {
   return (

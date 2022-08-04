@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderVideo from "../HeaderVideo";
+import HeaderVideo from "./HeaderVideo";
 
 import { IoDiamond, IoHappyOutline, IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { GoMegaphone } from "react-icons/go";
