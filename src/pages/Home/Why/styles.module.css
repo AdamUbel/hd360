@@ -3,12 +3,13 @@
 .title {
   text-align: center;
   font-family: "Staatliches", cursive;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   font-size: 4.5rem;
 }
 
 .reasons {
   text-align: center;
+  overflow: hidden;
 }
 
 .service_btn {
