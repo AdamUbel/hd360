@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeaderVideo from "./HeaderVideo";
+
+import { client, urlFor } from "../../../lib/client";
 
 import { IoDiamond, IoHappyOutline, IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { GoMegaphone } from "react-icons/go";
@@ -7,9 +9,28 @@ import { GoMegaphone } from "react-icons/go";
 import styles from "./styles.module.css";
 
 const Header = () => {
+  const [videoUrl, setVideoUrl] = useState();
+  const [logo, setLogo] = useState();
+
+  useEffect(() => {
+    let mounted = true;
+
+    const getData = async () => {
+      const q = '*[_type == "header"]';
+      const recievedData = await client.fetch(q);
+      if (mounted) {
+        setLogo(recievedData[0]);
+        setVideoUrl(recievedData[0]);
+      }
+    };
+    getData();
+
+    return () => (mounted = false);
+  }, []);
+
   return (
     <section id={styles.header}>
-      <div className={styles.logo}></div>
+      {logo && <div className={styles.logo} style={{ backgroundImage: `url(${urlFor(logo?.logo)})` }}></div>}
       <div className={styles.left_col}>
         <div className={styles.company_name}>
           <h1>
@@ -48,7 +69,7 @@ const Header = () => {
             <p>Videos That Are Too Good Not To Share.</p>
           </div>
         </div>
-        <HeaderVideo />
+        {videoUrl && <HeaderVideo url={videoUrl?.video} />}
       </div>
     </section>
   );

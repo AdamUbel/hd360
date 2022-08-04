@@ -2,12 +2,10 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-import VideoBG from "../../../../assets/videos/file.mp4";
-
-const HeaderVideo = () => {
+const HeaderVideo = ({ url }) => {
   return (
     <video autoPlay loop muted id={styles.video}>
-      <source src={VideoBG} type="video/mp4" />
+      <source src={url} type="video/mp4" />
     </video>
   );
 };

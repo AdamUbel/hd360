@@ -17,8 +17,6 @@
 
 .logo {
   position: absolute;
-
-  background-image: url(../../../assets/imgs/hd360logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
