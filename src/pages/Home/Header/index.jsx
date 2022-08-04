@@ -6,11 +6,14 @@ import { client, urlFor } from "../../../lib/client";
 import { IoDiamond, IoHappyOutline, IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { GoMegaphone } from "react-icons/go";
 
+import { motion } from "framer-motion";
+
 import styles from "./styles.module.css";
 
 const Header = () => {
   const [videoUrl, setVideoUrl] = useState();
   const [logo, setLogo] = useState();
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     let mounted = true;
@@ -28,9 +31,23 @@ const Header = () => {
     return () => (mounted = false);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      count >= 2 ? setCount(0) : setCount(count + 1);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [count]);
+
   return (
     <section id={styles.header}>
-      {logo && <div className={styles.logo} style={{ backgroundImage: `url(${urlFor(logo?.logo)})` }}></div>}
+      {logo && (
+        <motion.div
+          whileTap={{ scale: 0.9 }}
+          className={styles.logo}
+          style={{ backgroundImage: `url(${urlFor(logo?.logo)})` }}
+        ></motion.div>
+      )}
       <div className={styles.left_col}>
         <div className={styles.company_name}>
           <h1>
@@ -41,9 +58,9 @@ const Header = () => {
           </h2>
         </div>
         <div className={styles.bg_name}>
-          <h6>film maker</h6>
-          <h4>photographer</h4>
-          <h1>videographer</h1>
+          <h6 className={count === 0 ? styles.bg_name_active : null}>film maker</h6>
+          <h4 className={count === 1 ? styles.bg_name_active : null}>photographer</h4>
+          <h1 className={count === 2 ? styles.bg_name_active : null}>videographer</h1>
         </div>
       </div>
       <div className={styles.right_col}>
