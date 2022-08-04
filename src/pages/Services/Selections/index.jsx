@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import EQ from "../../assets/imgs/eq.png";
-import Wedding from "../../assets/imgs/wed.png";
-import Busi from "../../assets/imgs/busi.png";
-import Prod from "../../assets/imgs/prod.png";
-import Arch from "../../assets/imgs/arch.png";
+import EQ from "../../../assets/imgs/eq.png";
+import Wedding from "../../../assets/imgs/wed.png";
+import Busi from "../../../assets/imgs/busi.png";
+import Prod from "../../../assets/imgs/prod.png";
+import Arch from "../../../assets/imgs/arch.png";
 
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 

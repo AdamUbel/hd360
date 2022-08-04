@@ -1,5 +1,5 @@
 import React from "react";
-import Selections from "../../components/Selections";
+import Selections from "./Selections";
 
 import styles from "./styles.module.css";
 
