@@ -21,34 +21,6 @@
   margin-bottom: 2rem;
 }
 
-.card {
-  width: 10%;
-  box-shadow: 0px 0px 15px black;
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 2rem 0;
-}
-
-.card_client {
-  text-align: start;
-}
-
-.card_client > div {
-  color: gold;
-  padding: 10px;
-  text-align: center;
-}
-
-.card_client_img {
-  height: 25px;
-  width: 25px;
-}
-
-.card_client > h2 {
-  text-align: end;
-  border-bottom: 1px solid black;
-}
-
 .book_btn {
   display: inline-block;
   text-decoration: none;
