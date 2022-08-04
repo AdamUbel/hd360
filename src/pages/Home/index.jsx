@@ -1,9 +1,8 @@
 import React from "react";
-import About from "../../components/About";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import Testimonies from "../../components/Testimonies";
-import Why from "../../components/Why";
+import About from "./About";
+import Header from "./Header";
+import Testimonies from "./Testimonies";
+import Why from "./Why";
 
 import styles from "./styles.module.css";
 
@@ -14,7 +13,6 @@ const Home = () => {
       <Why />
       <About />
       <Testimonies />
-      <Footer />
     </div>
   );
 };
