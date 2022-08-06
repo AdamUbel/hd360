@@ -23,14 +23,35 @@
 }
 
 .nav_items {
-  color: rgb(0, 0, 0);
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   flex: 3;
   list-style: none;
+  font-weight: 600;
 }
 
-.nav_item {
+.nav_item,
+.nav_item_active {
   display: inline-block;
+  color: rgb(0, 0, 0);
   margin-right: 2.5rem;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav_item_active {
+  background-color: rgba(255, 255, 255, 0.705);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
+  animation: fade 1.2s;
+}
+
+@keyframes fade {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.705);
+  }
 }
