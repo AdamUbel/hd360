@@ -1,0 +1,24 @@
+.process_header_container {
+  width: 100%;
+  height: 25vh;
+  position: relative;
+  box-shadow: 0px 0px 15px black;
+}
+
+.image {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-family: "Staatliches", cursive;
+  font-size: 3.5rem;
+  padding-top: 5rem;
+  text-align: center;
+  color: whitesmoke;
+}
