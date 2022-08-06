@@ -2,8 +2,9 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
-import "./App.css";
 import Navbar from "./components/Navbar";
+import Process from "./pages/Process";
+import "./App.css";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/industries" element={<Services />} />
+        <Route path="/our-process" element={<Process />} />
         <Route path="*" element={<h1 className="center">Page Not Found.</h1>} />
       </Routes>
       <Footer />
