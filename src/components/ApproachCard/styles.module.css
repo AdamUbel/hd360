@@ -1,0 +1,14 @@
+.card_title {
+  text-decoration: underline 1px solid black;
+}
+
+.paragraph {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.card_container {
+  margin: 2rem 0;
+  width: 25vw;
+}

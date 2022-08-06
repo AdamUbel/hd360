@@ -1,0 +1,32 @@
+.section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.approach_bio {
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  width: 50%;
+  margin-top: 4rem;
+}
+
+.approach_bio > h1 {
+  font-size: 4rem;
+  border-bottom: 2px solid black;
+}
+.approach_bio > p {
+  font-size: 1.5rem;
+}
+
+.process_grid {
+  display: flex;
+  padding-top: 2rem;
+  width: 70%;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Staatliches", cursive;
+  font-size: 110%;
+}
