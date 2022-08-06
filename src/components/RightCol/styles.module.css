@@ -1,0 +1,33 @@
+.col_container {
+  display: flex;
+  height: 45vh;
+  overflow: hidden;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 15px darkgray;
+}
+
+.right_img {
+  flex: 1;
+  height: max-content;
+  overflow: hidden;
+  background-color: black;
+}
+
+.right_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.right_title {
+  font-family: "Staatliches", cursive;
+  font-size: xx-large;
+}
+
+.right_bio {
+  text-align: center;
+  width: 75%;
+  margin-top: 2rem;
+}
