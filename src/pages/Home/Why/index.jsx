@@ -30,17 +30,15 @@ const Why = () => {
     return () => (mounted = false);
   }, []);
 
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
-
   return (
     <section id="why">
       <h1 className={styles.title}>Why Choose HD360 Productions?</h1>
       <div className={styles.reasons} ref={ref}>
         {reasons.length > 0 && reasons.map((el, i) => <Statement key={i} statement={el} inView={isInView} />)}
       </div>
-      <a className={styles.service_btn}>SERVICES WE OFFER</a>
+      <a className={styles.service_btn} href="/industries">
+        SERVICES WE OFFER
+      </a>
     </section>
   );
 };

@@ -36,7 +36,9 @@ const Testimonies = () => {
           {review.length > 0 &&
             review.map((el, i) => <ClientCard key={i} name={el.name} review={el.review} rating={el.rating} />)}
         </div>
-        <a className={styles.book_btn}>Book With Us Today</a>
+        <a className={styles.book_btn} href="contact">
+          Book With Us Today
+        </a>
       </div>
     </section>
   );
