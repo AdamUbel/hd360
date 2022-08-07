@@ -26,6 +26,10 @@ const VideoType = () => {
 
   return (
     <section className={styles.type_container}>
+      <h2 className={styles.type_subtitle}>In The Meantime,</h2>
+      <h1 className={styles.type_title}>
+        Explore Key Video Styles <span>You</span> Can Benefit From.
+      </h1>
       {videoTypes.length > 0 &&
         videoTypes.map((el, i) => {
           return i % 2 === 0 ? (
