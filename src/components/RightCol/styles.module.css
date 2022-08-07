@@ -24,6 +24,7 @@
 .right_title {
   font-family: "Staatliches", cursive;
   font-size: xx-large;
+  border-bottom: 3px solid rgb(0, 194, 228);
 }
 
 .right_bio {

@@ -10,7 +10,7 @@ const RightCol = ({ img, title, desc }) => {
 
   const { scrollY } = useScroll();
 
-  const y2 = useTransform(scrollY, [0, 600], [0, -90], { clamp: false });
+  const y2 = useTransform(scrollY, [0, 600], [0, -50], { clamp: false });
 
   return (
     <section className={styles.col_container}>
