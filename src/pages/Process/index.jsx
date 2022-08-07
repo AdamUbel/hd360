@@ -5,14 +5,16 @@ import OurSteps from "./OurSteps";
 import VideoType from "./VideoType";
 import WhyVideo from "./WhyVideo";
 
+import styles from "./styles.module.css";
+
 const Process = () => {
   return (
-    <section>
+    <section className={styles.container}>
       <ProcessHeader />
       <OurProcess />
-      <VideoType />
-      <WhyVideo />
       <OurSteps />
+      <WhyVideo />
+      <VideoType />
     </section>
   );
 };

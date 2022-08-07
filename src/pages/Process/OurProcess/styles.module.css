@@ -14,7 +14,7 @@
 
 .approach_bio > h1 {
   font-size: 4rem;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid rgb(0, 194, 228);
 }
 .approach_bio > p {
   font-size: 1.5rem;
