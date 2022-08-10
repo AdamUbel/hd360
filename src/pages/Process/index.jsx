@@ -11,10 +11,10 @@ const Process = () => {
   return (
     <section className={styles.container}>
       <ProcessHeader />
-      <OurProcess />
       <OurSteps />
+      <OurProcess />
       <WhyVideo />
-      <VideoType />
+      {/* <VideoType /> */}
     </section>
   );
 };
