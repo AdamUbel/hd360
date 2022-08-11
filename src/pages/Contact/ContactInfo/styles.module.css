@@ -1,0 +1,42 @@
+.contact_info {
+  width: 45%;
+  height: 75vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactinfo_title {
+  margin-top: 2rem;
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+}
+
+.contact_types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_types > div {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.type_icon {
+  margin-top: 6px;
+  margin-right: 10px;
+  font-size: x-large;
+}
+
+.contact_socials {
+}
+
+.contact_image {
+  width: 100%;
+  height: 75vh;
+  opacity: 0.6;
+  z-index: -1;
+  position: absolute;
+}
