@@ -1,42 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-import { MdOutlineEmail } from "react-icons/md";
+import { client, urlFor } from "../../lib/client.js";
+
+import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
 
 import styles from "./styles.module.css";
 
 const Contact = () => {
-  return (
-    <section id="contact">
-      <h5>Get in Touch</h5>
-      <h2>Contact Me:</h2>
+  const [contactInfo, setContactInfo] = useState();
+  const [imgUrl, setImgUrl] = useState();
 
-      <div className={styles.contact_container}>
-        <div className={styles.contact_options}>
-          <article className={styles.contact_option}>
-            <MdOutlineEmail className={styles.contact_option_icon} />
-            <h4>Email:</h4>
-            <h5>info@hd360prod.com</h5>
-            <a href="mailto:info@hd360prod.com">Send an Email</a>
-          </article>
-        </div>
-        {/* NOTE input area */}
-        <form>
-          <label className={styles.label}>Full Name:</label>
-          <input type="text" name="name" placeholder="Your Full Name" required />
-          <label className={styles.label}>Email:</label>
-          <input type="text" name="email" placeholder="Your Email" required />
-          <label className={styles.label}>Additional Info:</label>
-          <textarea name="message" rows="7" placeholder="Ex: Tell me more about this project" required></textarea>
-          <button type="submit" className={styles.btn}>
-            Send Message
-          </button>
-        </form>
+  useEffect(() => {
+    let mounted = true;
+
+    const getContactData = async () => {
+      const q = '*[_type == "contact"]';
+      const contactData = await client.fetch(q);
+      if (mounted) {
+        setContactInfo(contactData[0]);
+        setImgUrl(urlFor(contactData[0]["image"]));
+      }
+    };
+    getContactData();
+
+    return () => (mounted = false);
+  }, []);
+
+  return (
+    <section id="contact" className={styles.contact_container}>
+      <div className={styles.contact_header}>
+        <h5>Get in Touch,</h5>
+        <h2>We're Here For You.</h2>
       </div>
 
-      <small>Any additional questions please reach out:</small>
-      <a href="mailto:info@hd360prod.com">
-        <small>info@hd360prod.com</small>
-      </a>
+      <div className={styles.contact_body}>
+        <ContactInfo contactInfo={contactInfo} image={imgUrl} />
+        <ContactForm />
+      </div>
+      <div>
+        {/* <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d46095715.73820037!2d-128.1448585!3d45.1575501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e475c33c13d8d7e!2sHD360%20Productions!5e0!3m2!1sen!2sus!4v1660155288308!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          style={{ border: "0" }}
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe> */}
+      </div>
     </section>
   );
 };

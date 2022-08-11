@@ -1,120 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
-
-.container {
-  position: relative;
-  width: 60vw;
-  margin-left: 20vw;
-  margin-top: 5rem;
-  border-radius: 25px;
-  padding: 2rem 0rem;
-  padding-bottom: 10rem;
+.contact_container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #000000;
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 15px 20px #ada996;
-}
-
-.contact_container {
-  width: auto;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.container > h2 {
-  font-family: "Secular", sans-serif;
-  padding-bottom: 2rem;
-  text-decoration: underline;
+.contact_header > h5,
+.contact_header > h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
 }
 
-.container > h5 {
-  font-family: "Secular", sans-serif;
+.contact_header > h2 {
+  text-decoration: underline 4px solid rgb(2, 193, 226);
 }
 
-.contact_options {
+.contact_body {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  margin-right: 2rem;
-}
-
-.contact_option {
-  background: #e9ecef;
-  color: #000000;
-  padding: 1.2rem;
-  border-radius: 1.2rem;
-  text-align: center;
-  border: 1px solid #000000;
-}
-
-.contact_option:hover {
-  background: transparent;
-  border-color: #383838;
-}
-
-.contact_option_icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact_option > h4,
-.contact_option > h5 {
-  font-family: "Secular", sans-serif;
-}
-
-.contact_option a {
-  font-family: "Secular", sans-serif;
-  margin-top: 0.7rem;
-  color: rgb(30, 32, 32);
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-input,
-textarea {
-  font-family: "Secular", sans-serif;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid #000000;
-  resize: none;
-  color: #000000;
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  background-color: #dbdbdb;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 5px #747474;
-}
-
-small {
-  font-family: "Secular";
-  margin-top: 1.5rem;
-  font-weight: bold;
-  color: #646464;
-  text-decoration: underline #747474;
+  flex-direction: row;
 }
