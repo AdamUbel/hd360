@@ -13,8 +13,8 @@ const Process = () => {
       <ProcessHeader />
       <OurSteps />
       <OurProcess />
+      <VideoType />
       <WhyVideo />
-      {/* <VideoType /> */}
     </section>
   );
 };

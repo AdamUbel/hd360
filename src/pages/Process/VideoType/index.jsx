@@ -26,9 +26,9 @@ const VideoType = () => {
 
   return (
     <section className={styles.type_container}>
-      <h2 className={styles.type_subtitle}>In The Meantime,</h2>
+      <h2 className={styles.type_subtitle}>Take a Peak Into Some Key Video Styles</h2>
       <h1 className={styles.type_title}>
-        Explore Key Video Styles <span>You</span> Can Benefit From.
+        And How <span>You</span> Can Directly Benefit From Them.
       </h1>
       {videoTypes.length > 0 &&
         videoTypes.map((el, i) => {
