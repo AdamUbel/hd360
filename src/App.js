@@ -4,6 +4,7 @@ import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Process from "./pages/Process";
+import Contact from "./pages/Contact";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/industries" element={<Services />} />
         <Route path="/our-process" element={<Process />} />
+        <Route path="/contact" element={<Contact />} />
+
         <Route path="*" element={<h1 className="center">Page Not Found.</h1>} />
       </Routes>
       <Footer />
