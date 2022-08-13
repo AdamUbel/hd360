@@ -11,7 +11,17 @@
   margin: 3rem 0 2rem 0;
 }
 
-.header > h1 > span {
+.testimonies_container > h4 {
+  font-family: "Staatliches", cursive;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header > h1 > span,
+.testimonies_container > h4 > span {
+  font-style: italic;
+  padding-right: 0.5rem;
   text-decoration: underline rgb(0, 195, 255);
 }
 

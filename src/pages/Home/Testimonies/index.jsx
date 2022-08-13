@@ -28,16 +28,21 @@ const Testimonies = () => {
       <div className={styles.testimonies_container}>
         <div className={styles.header}>
           <h1>
-            We Always Strive For <span>Your </span> Satisfaction.
+            We Always Strive For <span>Your </span> Satisfaction,
           </h1>
-          <h4>And we're proud to say our clients can agree.</h4>
         </div>
+        <h4>
+          And we're <span>Proud</span> To Say Our Clients Agree.
+        </h4>
         <div className={styles.card_container}>
           {review.length > 0 &&
-            review.map((el, i) => <ClientCard key={i} name={el.name} review={el.review} rating={el.rating} />)}
+            review.map((el, i) => (
+              <ClientCard key={i} image={el?.image || null} name={el.name} review={el.review} rating={el.rating} />
+            ))}
         </div>
+
         <a className={styles.book_btn} href="contact">
-          Book With Us Today
+          Contact Us Today
         </a>
       </div>
     </section>
