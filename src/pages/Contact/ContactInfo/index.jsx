@@ -11,15 +11,15 @@ const ContactInfo = ({ image, contactInfo }) => {
   return (
     <section className={styles.contact_info}>
       {image && <div className={styles.contact_image} style={{ backgroundImage: `url(${image})` }}></div>}
-      {title && <h1 className={styles.contactinfo_title}>{title}</h1>}
+      <h1 className={styles.contactinfo_title}>{title}.</h1>
       <div className={styles.contact_types}>
         <div>
           <AiFillPhone className={styles.type_icon} />
-          {phone && <h2>{phone}</h2>}
+          <h2>{phone}</h2>
         </div>
         <div>
           <MdEmail className={styles.type_icon} />
-          {email && <h2>{email}</h2>}
+          <h2>{email}</h2>
         </div>
       </div>
       <div className={styles.contact_socials}>
