@@ -7,6 +7,12 @@
   font-size: 4.5rem;
 }
 
+.title > span {
+  font-style: italic;
+  text-decoration: underline 3px rgb(0, 195, 255);
+  padding-right: 1rem;
+}
+
 .reasons {
   text-align: center;
   overflow: hidden;

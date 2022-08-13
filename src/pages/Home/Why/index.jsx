@@ -32,7 +32,9 @@ const Why = () => {
 
   return (
     <section id="why">
-      <h1 className={styles.title}>Why Choose HD360 Productions?</h1>
+      <h1 className={styles.title}>
+        How <span>We</span> Can Benefit You and Your Business.
+      </h1>
       <div className={styles.reasons} ref={ref}>
         {reasons.length > 0 && reasons.map((el, i) => <Statement key={i} statement={el} inView={isInView} />)}
       </div>
