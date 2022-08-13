@@ -15,10 +15,12 @@ const Showcase = ({ name, img, reasons }) => {
         <div className={styles.card_wrapper}>
           <div className={styles.background_img} style={{ backgroundImage: `url(${img})` }}></div>
           <div className={styles.left_col}>
-            <h1>{name}</h1>
-            <motion.a whileHover={{ scale: 1.1 }} className={styles.discover_btn}>
-              Discover More
-            </motion.a>
+            <div className={styles.left_wrapper}>
+              <h1>{name}</h1>
+              <motion.a whileHover={{ scale: 1.1 }} className={styles.discover_btn}>
+                Discover More
+              </motion.a>
+            </div>
           </div>
           <div className={styles.right_col}>
             <div className={styles.reason_container}>
