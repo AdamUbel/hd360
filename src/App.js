@@ -6,6 +6,9 @@ import Navbar from "./components/Navbar";
 import Process from "./pages/Process";
 import Contact from "./pages/Contact";
 import "./App.css";
+import Equine from "./pages/Equine";
+import Business from "./pages/Business";
+import Events from "./pages/Weddings";
 
 function App() {
   return (
@@ -14,10 +17,22 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/industries" element={<Services />} />
+        <Route path="/equine" element={<Equine />} />
+        <Route path="/business" element={<Business />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/our-process" element={<Process />} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="*" element={<h1 className="center">Page Not Found.</h1>} />
+        <Route
+          path="*"
+          element={
+            <h1 className="center" style={{ margin: "5rem 0rem 70vh 0rem" }}>
+              <a href="/" style={{ display: "block" }}>
+                Page Not Found.
+              </a>
+            </h1>
+          }
+        />
       </Routes>
       <Footer />
     </BrowserRouter>
