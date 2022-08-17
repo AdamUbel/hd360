@@ -1,7 +1,7 @@
 .card_container {
-  height: 45vh;
-  width: 100%;
-  margin: 1.75rem 0;
+  height: 55vh;
+  width: 80%;
+  margin: 1.75rem 10%;
   box-shadow: 0px 0px 15px black;
   border-radius: 15px;
 }
@@ -28,31 +28,39 @@
 }
 
 .left_col {
-  flex: 1;
+  flex: 1.5;
   display: flex;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-
-  font-size: xx-large;
+  justify-content: start;
+  color: rgb(0, 0, 0);
 }
 
 .left_wrapper {
   width: 50%;
+  height: 55vh;
   text-align: center;
   padding: 1rem;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.342);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.301);
+  overflow: hidden;
+}
+
+.left_wrapper > h1 {
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .discover_btn {
   display: inline-block;
-  font-size: large;
-  margin-top: 3rem;
+  font-size: x-large;
   padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: rgba(0, 0, 0, 0.356);
   color: rgb(255, 255, 255);
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 20px 0 15px 0;
+  text-decoration: none;
 }
 
 .discover_btn:hover {
@@ -61,18 +69,22 @@
 
 .right_col {
   flex: 1;
-  color: rgb(255, 255, 255);
-  backdrop-filter: blur(6px);
-  padding: 1rem 0 1rem 0;
 }
 
 .reason_container {
-  font-size: xx-large;
+  margin-top: 50%;
+  transform: translateY(-50%);
+  font-size: x-large;
 }
 
 .reason {
   list-style: none;
-  border-left: 1px solid rgb(255, 255, 255);
   margin-top: 5px;
-  padding-left: 1rem;
+  width: fit-content;
+  padding-left: 10px;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+
+.discover_arrow {
+  padding-top: 8px;
 }
