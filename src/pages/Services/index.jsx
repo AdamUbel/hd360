@@ -39,7 +39,9 @@ const Services = () => {
       </div>
       <div className={styles.card_container}>
         {serviceArr.length > 0 &&
-          serviceArr.map((el, i) => <Showcase key={i} name={el?.name} reasons={el?.reasons} img={urlFor(el?.image)} />)}
+          serviceArr.map((el, i) => (
+            <Showcase route={el?.route} key={i} name={el?.name} reasons={el?.reasons} img={urlFor(el?.image)} />
+          ))}
       </div>
       <div className={styles.service_explore}>
         <h2>Any Addtional Questions?</h2>
