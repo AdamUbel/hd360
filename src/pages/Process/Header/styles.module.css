@@ -28,3 +28,10 @@
   padding: 0 2rem;
   border-bottom: 3px solid rgb(61, 60, 60);
 }
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
