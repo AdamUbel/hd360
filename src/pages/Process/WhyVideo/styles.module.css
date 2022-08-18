@@ -21,7 +21,7 @@
   font-family: "Staatliches", cursive;
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-bottom: 2.5rem;
@@ -56,4 +56,27 @@
 .not_ready2 {
   font-family: "Staatliches", cursive;
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .whyvideo_container {
+    margin: 0;
+    transform: translateX(0);
+  }
+
+  .ready_btn {
+    padding: 1rem 2rem;
+  }
+
+  .list {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .list_item {
+    font-size: 1rem;
+  }
 }
