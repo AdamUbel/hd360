@@ -21,3 +21,9 @@
   font-style: italic;
   padding-right: 1rem;
 }
+
+@media only screen and (max-width: 1024px) {
+  .type_container {
+    display: none;
+  }
+}
