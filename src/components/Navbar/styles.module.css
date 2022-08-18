@@ -77,3 +77,53 @@
   text-decoration: none;
   margin-left: 5px;
 }
+
+.nav_mobile {
+  display: none;
+}
+
+.nav_brand {
+  font-family: "Staatliches", cursive;
+  margin-left: 20px;
+}
+
+.mobile_menu {
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+.mobile_dropdown {
+  text-align: center;
+  position: absolute;
+  width: 50vw;
+  height: max-content;
+  padding-bottom: 1rem;
+  right: 0;
+  z-index: 1;
+  background-color: #a6b0b7fd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_dropdown > a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-family: "Staatliches", cursive;
+  font-size: 1.75rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_items {
+    display: none;
+  }
+
+  .nav_mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
