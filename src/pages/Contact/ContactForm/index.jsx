@@ -30,41 +30,50 @@ const ContactForm = () => {
         <div className={styles.form_row3}>
           <p>Service Category:</p>
 
-          <input className={styles.radio_input} type="radio" name="job" id="equine" value="equine" />
-          <label className={styles.radio_label} for="equine">
-            Equine
-          </label>
+          <div>
+            <input className={styles.radio_input} type="radio" name="job" id="equine" value="equine" />
+            <label className={styles.radio_label} for="equine">
+              Equine
+            </label>
+          </div>
 
-          <input
-            className={styles.radio_input}
-            type="radio"
-            name="job"
-            id="ArchitectureDevelopment"
-            value="ArchitectureDevelopment"
-          />
-          <label className={styles.radio_label} for="ArchitectureDevelopment">
-            Architecture & Development
-          </label>
+          <div>
+            <input
+              className={styles.radio_input}
+              type="radio"
+              name="job"
+              id="ArchitectureDevelopment"
+              value="ArchitectureDevelopment"
+            />
+            <label className={styles.radio_label} for="ArchitectureDevelopment">
+              Architecture
+            </label>
+          </div>
+          <div>
+            <input className={styles.radio_input} type="radio" name="job" id="Business" value="Business" />
+            <label className={styles.radio_label} for="Business">
+              Business
+            </label>
+          </div>
+          <div>
+            <input className={styles.radio_input} type="radio" name="job" id="Products" value="Products" />
+            <label className={styles.radio_label} for="Products">
+              Products
+            </label>
+          </div>
 
-          <input className={styles.radio_input} type="radio" name="job" id="Business" value="Business" />
-          <label className={styles.radio_label} for="Business">
-            Business
-          </label>
-
-          <input className={styles.radio_input} type="radio" name="job" id="Products" value="Products" />
-          <label className={styles.radio_label} for="Products">
-            Products
-          </label>
-
-          <input className={styles.radio_input} type="radio" name="job" id="Events" value="Events" />
-          <label className={styles.radio_label} for="Events">
-            Events
-          </label>
-
-          <input className={styles.radio_input} type="radio" name="job" id="Other" value="Other" />
-          <label className={styles.radio_label} for="Other">
-            Other
-          </label>
+          <div>
+            <input className={styles.radio_input} type="radio" name="job" id="Events" value="Events" />
+            <label className={styles.radio_label} for="Events">
+              Events
+            </label>
+          </div>
+          <div>
+            <input className={styles.radio_input} type="radio" name="job" id="Other" value="Other" />
+            <label className={styles.radio_label} for="Other">
+              Other
+            </label>
+          </div>
         </div>
 
         <div className={styles.form_row4}>
