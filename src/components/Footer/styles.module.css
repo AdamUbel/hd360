@@ -80,3 +80,20 @@
   color: wheat;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+  .footer_container {
+    height: 20rem;
+  }
+  .footer_logo {
+    top: 35%;
+  }
+  .directory {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .directory > a {
+    margin-top: 5px;
+  }
+}
