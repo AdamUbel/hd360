@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import styles from "./styles.module.css";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [showMobile, setShowMobile] = useState(false);
 
   return (
     <div className={styles.navbar_container}>
@@ -49,6 +51,22 @@ const Navbar = () => {
           <NavLink className={({ isActive }) => (isActive ? styles.nav_item_active : styles.nav_item)} to="/portfolio">
             Portfolio
           </NavLink>
+        </div>
+
+        <div className={styles.nav_mobile}>
+          <h1 className={styles.nav_brand}> HD360</h1>
+          <div className={styles.mobile_menu}>
+            <GiHamburgerMenu onClick={() => setShowMobile(!showMobile)}></GiHamburgerMenu>
+            {showMobile && (
+              <div className={styles.mobile_dropdown} onClick={() => setShowMobile(!showMobile)}>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/industries">Services</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/our-process">Our Process</NavLink>
+                <NavLink to="/portfolio">Portfolio</NavLink>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
