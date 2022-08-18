@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const HeaderVideo = ({ url }) => {
   return (
-    <video autoPlay loop muted id={styles.video}>
+    <video autoPlay playsInline loop muted id={styles.video}>
       <source src={url} type="video/mp4" />
     </video>
   );
