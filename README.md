@@ -17,6 +17,8 @@ The HD360 Productions website is live and can be accessed [here](https://hd360.v
 ## Technologies Used
 
 - [React](https://reactjs.org): A JavaScript library for building user interfaces.
+- [React Icons](https://react-icons.github.io/react-icons/): Icon library for React applications.
+- [Framer Motion](https://www.framer.com/api/motion/): A production-ready motion library for React.
 - [Sanity.io](https://www.sanity.io): A headless CMS for managing content.
 - [Cloudinary API](https://cloudinary.com): A cloud-based media management solution.
 
